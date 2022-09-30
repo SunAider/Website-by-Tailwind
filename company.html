@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 公開前、Analyticsタグ設置
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>co-necto | TOPPAN OPEN INNOVATION PROGRAM</title>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!--canonical-->
+    <link rel="canonical" href="URL" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="webclip.png" /><!-- webclip.pngはスマホのホーム画面登録用。150pxの正方形で画像作成。 -->
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" /><!-- TOPページはwebsite、　それ以外はarticle -->
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL（絶対パス）" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image or summary" /><!-- summary_large_imageは大きな画像で表示 -->
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL（絶対パス）" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+	<!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+
+    <!-- js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+    <!-- 開発環境時、必須 -->
+    <meta name="robots" content="noindex, nofollow">
+
+</head>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-5 bg-gray-500 relative flex items-center w-full justify-between">
+        <div class="px-6 w-full flex flex-wrap items-center justify-between">        
+            <div class="navbar-collapse collapse grow items-center justify-between" id="navbarSupportedContentY">
+                <div class="w-44 h-6">
+                    <img src="assets/img/logo.png" alt="" class="w-full">
+                </div>
+                <ul class="navbar-nav lg:flex lg:flex-row items-center">
+                    <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white flex" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <div class="relative mr-1">
+                                <img src="assets/img/notification.png" alt="">
+                                <div class="w-2 h-2 bg-red-600 rounded absolute bottom-0 right-0"></div>
+                            </div>
+                            <div>お知らせ</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">お問い合わせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">サポートダイヤル</a>
+                    </li>
+                    <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <div class="font-[inter] font-bold text-lg">03-4405-5607</div>
+                            <div class="font-[inter] font-normal text-xs">平日10 : 00 ～ 18 : 00</div>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white h-10 flex" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <div class="w-6 h-6 bg-green-500 rounded-xl text-center">A</div>
+                            <div><i class="fa-sharp fa-solid fa-triangle"></i></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  
+  </header>
+
+
+
+<body>
+    <div class="flex">
+        <section class="w-40 bg-gray-500">
+            <div class="accordion text-xs" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingOne">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span></span>
+                            <span>Top</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingTwo">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span></span>
+                            <span>集計</span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingThree">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span></span>
+                            <span>企業リスト</span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-4 px-5">
+                            <div class="py-4 pl-8 text-white">企業登録</div>
+                            <div class="py-4 pl-8 text-white">通知一覧</div>
+                            <div class="py-4 pl-8 text-white">アポ禁止</div>
+                            <div class="py-4 pl-8 text-white">一括登録</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingFour">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <span></span>
+                            <span>商材管理</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-4 px-5">
+                            <div class="py-4 pl-8 text-white">トーク集</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingFive">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span></span>
+                            <span>ニュース管理</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingSix">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <span></span>
+                            <span>ユーザー管理</span>
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingSeven">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <span></span>
+                            <span>個人設定</span>
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingEight">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <span></span>
+                            <span>メンテナンス</span>
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample"></div>
+                </div>
+            </div>
+            <div class="text-xs text-white p-4">
+                <div class="py-1">
+                    <a href="#!">
+                        <span>></span>
+                        <span>利用承諾事項</span>
+                    </a>
+                </div>
+                <div class="py-1">
+                    <a href="#!">
+                        <span>></span>
+                        <span>運営会社</span>
+                    </a>
+                </div>
+                <div class="text-[10px]">Copyright (c) OM SYSTEM</div>
+            </div>
+        </section>
+        <section class="p-4 w-full">
+            <div class="text-3xl font-bold font-[roboto mono] my-4">企業リスト</div>
+            <div class="text-lg font-bold text-[Roboto Mono]">企業検索</div>
+            <div class="border-2 border-[#23BCAC] px-8 py-7 rounded w-11/12">
+                <div>
+                    <div class="flex w-full">
+                        <div class="border-t-[1px] border-r-[1px] p-2 whitespace-nowrap">コール履歴</div>
+                        <div class="border-b-[1px] p-2 w-full"></div>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <div>
+                            <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-gray-100 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput5" value="会社名" aria-label="readonly input example" readonly/>
+                        </div>
+                        <div class="xl:w-36">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>ステータス</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="xl:w-28">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>ランク</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="xl:w-48">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>業界</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="xl:w-48">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>地域</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <div class="datepicker relative form-floating mb-3 xl:w-56">
+                                <input type="text"
+                                class="form-control 
+                                w-full px-3 py-1 
+                                text-base font-normal text-gray-700 
+                                bg-gray-100 bg-clip-padding 
+                                border border-solid border-gray-300 rounded 
+                                transition ease-in-out 
+                                m-0 
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                placeholder="Select a date" />
+                                <label for="floatingInput" class="text-gray-700">最終アタック期間開始</label>
+                                <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                    <i class="fas fa-calendar datepicker-toggle-icon"></i>
+                                  </button>
+                            </div>
+                            <div class="text-[14px] font-normal mx-2">~</div>
+                            <div class="datepicker relative form-floating mb-3 xl:w-56">
+                                <input type="text"
+                                class="form-control 
+                                w-full px-3 py-1 
+                                text-base font-normal text-gray-700 
+                                bg-gray-100 bg-clip-padding 
+                                border border-solid border-gray-300 rounded 
+                                transition ease-in-out 
+                                m-0 
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                placeholder="Select a date" />
+                                <label for="floatingInput" class="text-gray-700">最終アタック期間終了</label>
+                                <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                    <i class="fas fa-calendar datepicker-toggle-icon"></i>
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="xl:w-32">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>種類</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="xl:w-40">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>商材</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="xl:w-44">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>アポ担当者</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex w-full">
+                        <div class="border-t-[1px] border-r-[1px] p-2 whitespace-nowrap">次回アタック</div>
+                        <div class="border-b-[1px] p-2 w-full"></div>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <div class="flex items-center justify-center">
+                            <div class="datepicker relative form-floating mb-3 xl:w-56">
+                                <input type="text"
+                                class="form-control 
+                                w-full px-3 py-1 
+                                text-base font-normal text-gray-700 
+                                bg-gray-100 bg-clip-padding 
+                                border border-solid border-gray-300 rounded 
+                                transition ease-in-out 
+                                m-0 
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                placeholder="Select a date" />
+                                <label for="floatingInput" class="text-gray-700">次回アタック期間開始</label>
+                                <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                    <i class="fas fa-calendar datepicker-toggle-icon"></i>
+                                  </button>
+                            </div>
+                            <div class="text-[14px] font-normal mx-2">~</div>
+                            <div class="datepicker relative form-floating mb-3 xl:w-56">
+                                <input type="text"
+                                class="form-control 
+                                w-full px-3 py-1 
+                                text-base font-normal text-gray-700 
+                                bg-gray-100 bg-clip-padding 
+                                border border-solid border-gray-300 rounded 
+                                transition ease-in-out 
+                                m-0 
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                placeholder="Select a date" />
+                                <label for="floatingInput" class="text-gray-700">次回アタック期間終了</label>
+                                <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                    <i class="fas fa-calendar datepicker-toggle-icon"></i>
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="xl:w-32">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>種類</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex w-full">
+                        <div class="border-t-[1px] border-r-[1px] p-2 whitespace-nowrap">登録・契約</div>
+                        <div class="border-b-[1px] p-2 w-full"></div>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <div class="flex items-center justify-center">
+                            <div class="datepicker relative form-floating mb-3 xl:w-56">
+                                <input type="text"
+                                class="form-control 
+                                w-full px-3 py-1 
+                                text-base font-normal text-gray-700 
+                                bg-gray-100 bg-clip-padding 
+                                border border-solid border-gray-300 rounded 
+                                transition ease-in-out 
+                                m-0 
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                placeholder="Select a date" />
+                                <label for="floatingInput" class="text-gray-700">期間開始</label>
+                                <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                    <i class="fas fa-calendar datepicker-toggle-icon"></i>
+                                  </button>
+                            </div>
+                            <div class="text-[14px] font-normal mx-2">~</div>
+                            <div class="datepicker relative form-floating mb-3 xl:w-56">
+                                <input type="text"
+                                class="form-control 
+                                w-full px-3 py-1 
+                                text-base font-normal text-gray-700 
+                                bg-gray-100 bg-clip-padding 
+                                border border-solid border-gray-300 rounded 
+                                transition ease-in-out 
+                                m-0 
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                placeholder="Select a date" />
+                                <label for="floatingInput" class="text-gray-700">期間終了</label>
+                                <button class="datepicker-toggle-button" data-mdb-toggle="datepicker">
+                                    <i class="fas fa-calendar datepicker-toggle-icon"></i>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex w-full">
+                        <div class="border-t-[1px] border-r-[1px] p-2 whitespace-nowrap">コール履歴</div>
+                        <div class="border-b-[1px] p-2 w-full"></div>
+                    </div>
+                    <div class="flex mt-4">
+                        <div class="form-check form-check-inline mr-12">
+                          <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label inline-block text-gray-800" for="inlineRadio10">販売管理</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-12">
+                          <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label inline-block text-gray-800" for="inlineRadio20">経理</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-12">
+                          <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label inline-block text-gray-800" for="inlineRadio20">LED</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-12">
+                          <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label inline-block text-gray-800" for="inlineRadio20">プロバイダ</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-12">
+                          <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label inline-block text-gray-800" for="inlineRadio20">カメラ</label>
+                        </div>
+                        <div class="form-check form-check-inline mr-12">
+                          <input class="form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label inline-block text-gray-800" for="inlineRadio20">その他</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <div class="xl:w-36">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>種類</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="xl:w-28">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-base
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>売掛商売</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-gray-100 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlInput5" value="メーカー" aria-label="readonly input example" readonly/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full mt-16">
+                <div class="flex justify-between">
+                    <div>
+                        <div class="text-lg font-bold font-[roboto mono] ">企業検索結果</div>
+                        <div class="text-xs font-[roboto mono] ">全 123 件</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-xs font-semibold mr-8">表示件数</div>
+                        <div class="xl:w-32">
+                            <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            py-1.5
+                            text-[14px]
+                            font-normal
+                            text-gray-700
+                            bg-gray-100 bg-clip-padding bg-no-repeat
+                            border border-solid border-gray-300
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:text-gray-700 focus:bg-white" aria-label="Default select example">
+                                <option selected>100件</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <table class="w-full border-collapse border border-slate-500 mt-2">
+                    <thead class="bg-[#D9D9D9] text-[10px] font-normal">
+                        <tr>
+                            <th class="border border-slate-600 py-2">ステータス</th>
+                            <th class="border border-slate-600 py-2">会社名</th>
+                            <th class="border border-slate-600 py-2">ランク</th>
+                            <th class="border border-slate-600 py-2">業種</th>
+                            <th class="border border-slate-600 py-2">地域</th>
+                            <th class="border border-slate-600 py-2">次回アタック日時</th>
+                            <th class="border border-slate-600 py-2">アタック種類</th>
+                            <th class="border border-slate-600 py-2">商材</th>
+                            <th class="border border-slate-600 py-2">アポ担当者</th>
+                            <th class="border border-slate-600 py-2">アポ禁止</th>
+                            <th class="border border-slate-600 py-2">詳細</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs font-normal text-center">
+                        <tr>
+                            <td class="border border-slate-700 py-2">追わない</td>
+                            <td class="border border-slate-700 py-2 text-blue-600">株式会社スマートスタート</td>
+                            <td class="border border-slate-700 py-2">C</td>
+                            <td class="border border-slate-700 py-2">美容・ファッション</td>
+                            <td class="border border-slate-700 py-2">神奈川</td>
+                            <td class="border border-slate-700 py-2">2022年9月9日 10:00</td>
+                            <td class="border border-slate-700 py-2">電話</td>
+                            <td class="border border-slate-700 py-2">ビジネスフォン</td>
+                            <td class="border border-slate-700 py-2">小野坂 太郎</td>
+                            <td class="border border-slate-700 py-2">あり</td>
+                            <td class="border border-slate-700 py-2 text-blue-600">詳細</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-slate-700 py-2">追わない</td>
+                            <td class="border border-slate-700 py-2 text-blue-600">株式会社スマートスタート</td>
+                            <td class="border border-slate-700 py-2">C</td>
+                            <td class="border border-slate-700 py-2">美容・ファッション</td>
+                            <td class="border border-slate-700 py-2">神奈川</td>
+                            <td class="border border-slate-700 py-2">2022年9月9日 10:00</td>
+                            <td class="border border-slate-700 py-2">電話</td>
+                            <td class="border border-slate-700 py-2">ビジネスフォン</td>
+                            <td class="border border-slate-700 py-2">小野坂 太郎</td>
+                            <td class="border border-slate-700 py-2">あり</td>
+                            <td class="border border-slate-700 py-2 text-blue-600">詳細</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="flex justify-center mt-12">
+                    <nav aria-label="Page navigation example">
+                      <ul class="flex list-style-none">
+                        <li class="page-item disabled">
+                            <a class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-500 pointer-events-none focus:shadow-none"
+                            href="#" tabindex="-1" aria-disabled="true"><&nbsp;前へ</a>
+                        </li>
+                        <li class="page-item mx-1"><a
+                            class="page-link relative block py-1.5 px-3 border-0 bg-gray-100 outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            href="#">1</a></li>
+                        <li class="page-item mx-1 active"><a
+                            class="page-link relative block py-1.5 px-3 border-0 bg-[#23BCAC] outline-none transition-all duration-300 rounded-full text-white hover:text-white hover:bg-blue-600 shadow-md focus:shadow-md"
+                            href="#">2 <span class="visually-hidden">(current)</span></a></li>
+                        <li class="page-item mx-1+"><a
+                            class="page-link relative block py-1.5 px-3 border-0 bg-gray-100 outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            href="#">3</a></li>
+                        <li class="page-item mx-1+"><span
+                            class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            >&#x2022;&#x2022;&#x2022;</span></li>
+                        <li class="page-item mx-1+"><a
+                            class="page-link relative block py-1.5 px-3 border-0 bg-gray-100 outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            href="#">99</a></li>
+                        <li class="page-item"><a
+                            class="page-link relative block py-1.5 px-3 border-0 bg-transparent outline-none transition-all duration-300 rounded-full text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                            href="#">次へ&nbsp;></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
