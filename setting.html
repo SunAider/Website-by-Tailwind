@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 公開前、Analyticsタグ設置
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>co-necto | TOPPAN OPEN INNOVATION PROGRAM</title>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!--canonical-->
+    <link rel="canonical" href="URL" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="webclip.png" /><!-- webclip.pngはスマホのホーム画面登録用。150pxの正方形で画像作成。 -->
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" /><!-- TOPページはwebsite、　それ以外はarticle -->
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL（絶対パス）" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image or summary" /><!-- summary_large_imageは大きな画像で表示 -->
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL（絶対パス）" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+        </script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+	<!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+
+    <!-- js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+    <!-- 開発環境時、必須 -->
+    <meta name="robots" content="noindex, nofollow">
+
+</head>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-5 bg-gray-500 relative flex items-center w-full justify-between">
+        <div class="px-6 w-full flex flex-wrap items-center justify-between">        
+            <div class="navbar-collapse collapse grow items-center justify-between" id="navbarSupportedContentY">
+                <div class="w-44 h-6">
+                    <img src="assets/img/logo.png" alt="" class="w-full">
+                </div>
+                <ul class="navbar-nav lg:flex lg:flex-row items-center">
+                    <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white flex" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <div class="relative mr-1">
+                                <img src="assets/img/notification.png" alt="">
+                                <div class="w-2 h-2 bg-red-600 rounded absolute bottom-0 right-0"></div>
+                            </div>
+                            <div>お知らせ</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">お問い合わせ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">サポートダイヤル</a>
+                    </li>
+                    <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <div class="font-[inter] font-bold text-lg">03-4405-5607</div>
+                            <div class="font-[inter] font-normal text-xs">平日10 : 00 ～ 18 : 00</div>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2 lg:mb-0">
+                        <a class="nav-link block pr-2 lg:px-2 py-2 text-white h-10 flex" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <div class="w-6 h-6 bg-green-500 rounded-xl text-center">A</div>
+                            <div><i class="fa-sharp fa-solid fa-triangle"></i></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  
+  </header>
+
+
+
+<body>
+    <div class="flex">
+        <section class="w-40 bg-gray-500">
+            <div class="accordion text-xs" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingOne">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span></span>
+                            <span>Top</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingTwo">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span></span>
+                            <span>集計</span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingThree">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span></span>
+                            <span>企業リスト</span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-4 px-5">
+                            <div class="py-4 pl-8 text-white">企業登録</div>
+                            <div class="py-4 pl-8 text-white">通知一覧</div>
+                            <div class="py-4 pl-8 text-white">アポ禁止</div>
+                            <div class="py-4 pl-8 text-white">一括登録</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingFour">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <span></span>
+                            <span>商材管理</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-4 px-5">
+                            <div class="py-4 pl-8 text-white">トーク集</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingFive">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span></span>
+                            <span>ニュース管理</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingSix">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <span></span>
+                            <span>ユーザー管理</span>
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingSeven">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <span></span>
+                            <span>個人設定</span>
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample"></div>
+                </div>
+                <div class="w-32 h-[1px] bg-white mx-auto my-2"></div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" id="headingEight">
+                        <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-white text-left border-0 rounded-none transition focus:outline-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <span></span>
+                            <span>メンテナンス</span>
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample"></div>
+                </div>
+            </div>
+            <div class="text-xs text-white p-4">
+                <div class="py-1">
+                    <a href="#!">
+                        <span>></span>
+                        <span>利用承諾事項</span>
+                    </a>
+                </div>
+                <div class="py-1">
+                    <a href="#!">
+                        <span>></span>
+                        <span>運営会社</span>
+                    </a>
+                </div>
+                <div class="text-[10px]">Copyright (c) OM SYSTEM</div>
+            </div>
+        </section>
+        <section class="p-4 w-full">
+            <div class="text-3xl font-bold font-[roboto mono] my-4">個人設定</div>
+            <div>
+                <div class="flex mt-4 text-[10px]">
+                    <div class="py-2 px-4 border-[1px] border-gray-300 bg-gray-100 min-w-[5rem]">個人/法人</div>
+                    <div class="p-1 border-[1px] border-l-0 border-gray-300 bg-white min-w-[7rem]">
+                        <select class="form-select appearance-none
+                        block
+                        w-full
+                        px-3
+                        py-1
+                        text-[10px]
+                        font-normal
+                        text-gray-700
+                        bg-gray-100 bg-clip-padding bg-no-repeat
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:outline-gray-400" aria-label="Default select example">
+                            <option selected>プロバイダ</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>            
+                <button type="button" class="inline-block px-6 py-2.5 bg-teal-400 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-teal-700 hover:shadow-lg focus:bg-teal-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-800 active:shadow-lg transition duration-150 ease-in-out mt-8 ml-auto mr-auto w-32">
+                    登録する
+                </button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

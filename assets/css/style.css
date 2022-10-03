@@ -10,3 +10,10 @@
     border-top-left-radius: 2rem !important;
     border-bottom-left-radius: 2rem;
 }
+.nav-tabs .nav-link.active {
+    color: black;
+    border-color: #9E9E9E;
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:0;
+}
