@@ -21,3 +21,18 @@
 .top_main {
    min-height:calc(100vh - 100px);
 }
+
+.chkedBlueBtn {
+   background:#2C34EF;
+   border-radius:25px;
+   padding:5px 10px;
+
+}
+.chkedYellowBtn {
+    background:#EF952C;
+    border-radius:25px;
+    padding:5px 10px; 
+ }
+label.chkedBtn{
+    color:white;
+}
